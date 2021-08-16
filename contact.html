@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css">               
+    </head>
+
+    <header>
+
+        <nav>                               
+            <ul class="inline">
+                <li><a href="index.html">Home</a></li>
+                <li><a href=cello.html>Cello</a></li>
+                <li><a href=bushcraft.html>Bushcraft</a></li>
+                <li><a href=boulderen.html>Boulderen</a></li>
+                <li><a href=bio.html>Bio</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="right"><a href="https://www.google.nl">google</a></li>           
+            </ul>
+        </nav>
+
+    </header>
+
+    <body>   
+    
+        <main>
+
+            <h3>Vul hieronder uw gegevens in en upload uw (bushcraft) recept:</h3>
+            
+
+            <form name="contact" method="POST" data-netlify="true">
+                          
+                <label for="roepnaam">Naam: </label><br> <!-- label with for= increases clickable area for input-->
+                <input class="input" name="Naam: "  type="text" id="roepnaam"/><br><br>
+
+                <label for="mail">Emailadres: </label><br>
+                <input class="input" name="Email: " type="email" id="mail"/><br><br>
+
+                <label for="tel">Telefoon: </label><br>
+                <input class="input" name="Telefoon: " type="tel" id="tel"/><br><br>
+
+                <label for="leeftijd">Leeftijd: </label><br>
+                <input class="input" name="Leeftijd: " type="number" id="leeftijd"/><br><br>
+
+                <label for="geboorte">Geboortedatum: </label><br>
+                <input class="input datum" name="Geboortedatum: " type="date" id="geboorte"/><br><br>
+
+                <label for="gender">Geslacht: </label><br>
+                <input name="Geslacht: " type="radio" id="gender" value="Man" checked/>
+                <label for="Man">Man</label>
+                <input name="Geslacht: " type="radio" value="Vrouw"/>
+                <label for="Man">Vrouw</label><br><br>
+
+                <label for="keuken">Favoriete cuisine:</label><br><br>          
+                <input name="Favoriete Cuisine:[]" type="checkbox" id="keuken" value="Frans"/>
+                <label for="Frans">Frans</label><br>
+                <input name="Favoriete Cuisine:[]" type="checkbox" value="Italiaans"/>                                                   
+                <label for="Italiaans">Italiaans</label><br>         
+                <input name="Favoriete Cuisine:[]" type="checkbox" value="Spaans"/>        
+                <label for="Spaans">Spaans</label><br>
+                <input name="Favoriete Cuisine:[]" type="checkbox" value="Arabisch"/>
+                <label for="Arabisch">Arabisch</label><br><br>                    
+
+                <label for="schort">Kies je favorite kleur schort: </label><br>
+                <input name="Favoriete kleur schort: " class="colorpicker input" type="color" value="#6699cc"/><br><br><br> 
+                
+                <label for="site">Jouw recepten website: </label><br>
+                <input name="Jouw recepten website: " type="url" id="site" value="https://www."/><br><br><br>
+
+                <label for="recept">Upload je laatste recept: </label><br>
+                <input name="Bestand: " type="file" id="recept" value="https://www."/><br><br><br>
+                                  
+                <label for="bericht"> Over jezelf: </label><br>
+                <textarea class="input bio" name="Over jezelf: "  rows="15" cols="75" id="bericht"></textarea><br><br><br> 
+                
+                <ul>
+                    <li class="send">
+                        <input class="button" type="reset" value="Wis gegevens" /> 
+                    </li>
+                    <li class="send">
+                        <input class="button" type="submit" value="versturen" /> <!-- value overrides default value-->
+                    </li>
+                </ul>                
+                             
+            </form>
+
+        
+        </main>
+
+
+        <footer class="center">                        
+             <p>Copyright &copy; 2021 Anningasten Productions</p>                            
+        </footer>               
+            
+
+    </body>
+
+</html>

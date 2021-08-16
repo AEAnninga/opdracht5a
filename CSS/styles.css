@@ -1,0 +1,225 @@
+@font-face {
+    font-family: SpecialElite-Regular;
+    src: url(SpecialElite-Regular.ttf);
+}
+
+body {
+    font-family: SpecialElite-Regular;
+    background-color:rgba(102, 153, 204, 0.068);
+    background-image: url("../images/cello_kodaly.jpg");         
+}
+
+main{
+    margin-left: 10px;
+}
+
+header {
+    border-width: 0.25em;
+    border-color: rgba(102, 153, 204, 0.342);
+    border-style: dashed;
+    border-radius: 1em;    
+    margin-bottom: 0.25em;
+    padding: 0.25em;
+    text-align: center;
+}
+
+p.intro {
+    color:rgb(55, 78, 105);
+    text-shadow:3px 20px 3px rgba(102, 153, 204, 0.39);
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0 auto;
+}
+
+h1, h3, h4, p, li, a, label, input {
+
+    color:rgb(55, 78, 105);
+}
+
+a {
+    text-decoration: none;    
+}
+
+
+.border {    
+    border-style: solid;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;    
+    border-color: #69C #69C rgba(102, 153, 204, 0.651) rgba(255, 255, 255, 0);
+    border-width: 0 3em 7.25em 3em;
+    width: 0em;
+    margin: -0.25em 0 0 0;
+    padding: 0;
+    float: left;
+    clear: left;
+}
+
+
+.plaatje {
+    border-style:double;
+    border-color: #69C;
+    border-width: 0.3em;
+    width: 300px;
+}
+
+.logo {
+    width:75px;    
+}
+
+ .logobeer {
+    width:30px;
+    margin-left: 20px;
+
+ }   
+
+
+
+.center {
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;       
+    bottom: 10px;   
+}
+
+.content {
+    background: url("../images/cello_kodaly.jpg");
+    background-color: rgb(223, 237, 250);
+    padding: 2em;
+    box-shadow: 0 0 0.5em #69C;
+    margin-top: 1em;
+}   
+
+.send {
+    display: inline; 
+    padding: 2em;   
+}
+
+
+li a {
+    width: 100px;
+    padding: 40px 30px;    
+    text-align: center;
+    display: block;    
+}
+
+li a.active{
+    background-color: rgba(102, 153, 204, 0.651);
+    color: white;    
+}
+
+
+li a:hover:not(.active) {
+    background-color: rgba(102, 153, 204, 0.651);
+    color: white;
+}
+
+.inline {
+    display: flex;
+    flex-flow: row wrap;   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+    background-color: rgb(153, 190, 226);
+    border-radius: 1em;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+li.right {
+    float: right;
+}
+
+
+.button {
+    background-color: rgba(102, 153, 204, 0.493);
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-family: SpecialElite-Regular;
+}
+
+.input {
+border-radius: 5px;
+border-color: #69c;
+color: #69C;
+
+}
+
+.datum {
+    width: 13em;
+}
+
+.colorpicker {
+    width: 13em;
+    height: 2em;    
+}
+
+.container {    
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+              
+}
+
+.blogpost {
+    width: 300px;
+    border: 1px solid #69c;
+    background-color: white;
+    margin: 20px;       
+}
+
+.blogpost1, .blogpost3, .blogpost5 {
+    flex-grow: 2; 
+    /* align-self doet niets, omdat align alleen voor verticaal is (column) */           
+}
+
+
+@media (min-width: 1024px) {
+    h1, h4, p, li, a, label, input:not(.button)  {
+        color: rgb(0, 150, 250);
+        line-height: 0.5;
+        font-size: 15px
+    }
+    p.intro {
+        color: rgb(0, 152, 253);
+        line-height: 0.5;
+        font-size: 150%
+    }
+
+    .border {    
+        border-style: solid;
+        border-bottom-right-radius: 0.5em;
+        border-top-left-radius: 0.5em;    
+        border-color: #69C rgba(102, 153, 204, 0.651) rgba(102, 153, 204, 0.651) rgba(255, 255, 255, 0);
+        border-width: 0 2em 5.5em 3em;
+        width: 0em;
+        margin: -0.5em 0 0 0;
+        padding: 0;
+        float: left;
+        clear: left;
+    }
+
+    .bio {
+        display: block;
+        top:10px
+    }
+    
+}
+
+
+
+
+
+
+
+
+
